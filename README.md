@@ -11,10 +11,12 @@ This project runs a full pipeline for **zero-shot idea-unit coverage classificat
 
 ---
 
-## Dependencies
+## Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-pip install pandas scikit-learn sentence-transformers faiss-cpu tqdm lmdeploy
+pip install -r requirements.txt
 ```
 
 > If you do not want FAISS, you can skip `faiss-cpu`. RAG will fall back to a numpy similarity search.
