@@ -1,4 +1,5 @@
-# Note–IdeaUnit Coverage Pipeline (Rule / BERT-LR / LLM / LLM-RAG)
+# Classification and Evaluation of Note Taking Quality from Different
+Scientific Domains
 
 This project runs a full pipeline for **zero-shot idea-unit coverage classification**:
 - Merge `Notes.csv` with `train.csv` and `test.csv`
