@@ -1,0 +1,87 @@
+=== Overall Metrics ===
+[test] BERT-Ensemble: Acc=0.5985, F1=0.5593
+[test] BERT-LR:sentence-transformers/all-MiniLM-L6-v2: Acc=0.5946, F1=0.5570
+[test] BERT-LR:sentence-transformers/all-mpnet-base-v2: Acc=0.6020, F1=0.5574
+[test] LLM-Plain: Acc=0.7218, F1=0.6885
+[test] LLM-RAG: Acc=0.7511, F1=0.6840
+[test] RuleBased: Acc=0.6406, F1=0.6362
+[valid] BERT-Ensemble: Acc=0.6078, F1=0.6429
+[valid] BERT-LR:sentence-transformers/all-MiniLM-L6-v2: Acc=0.6471, F1=0.6897
+[valid] BERT-LR:sentence-transformers/all-mpnet-base-v2: Acc=0.5882, F1=0.6316
+[valid] LLM-Plain: Acc=0.7647, F1=0.7778
+[valid] LLM-RAG: Acc=1.0000, F1=1.0000
+[valid] RuleBased: Acc=0.5686, F1=0.6562
+
+=== Per-Topic Metrics ===
+
+Model: BERT-Ensemble | Split: test
+  Topic=ComputerScience: Acc=0.6389, F1=0.5832
+  Topic=Ecology: Acc=0.4727, F1=0.6329
+  Topic=Physics: Acc=0.7150, F1=0.0172
+  Topic=Statistics: Acc=0.5465, F1=0.6112
+
+Model: BERT-Ensemble | Split: valid
+  Topic=Statistics: Acc=0.5000, F1=0.6400
+  Topic=Ecology: Acc=0.5385, F1=0.7000
+  Topic=ComputerScience: Acc=0.7778, F1=0.7500
+  Topic=Physics: Acc=0.7273, F1=0.0000
+
+Model: BERT-LR:sentence-transformers/all-MiniLM-L6-v2 | Split: test
+  Topic=ComputerScience: Acc=0.6339, F1=0.5846
+  Topic=Ecology: Acc=0.4764, F1=0.6349
+  Topic=Physics: Acc=0.7157, F1=0.0197
+  Topic=Statistics: Acc=0.5326, F1=0.6008
+
+Model: BERT-LR:sentence-transformers/all-MiniLM-L6-v2 | Split: valid
+  Topic=Statistics: Acc=0.5556, F1=0.6923
+  Topic=Ecology: Acc=0.5385, F1=0.7000
+  Topic=ComputerScience: Acc=0.8889, F1=0.8889
+  Topic=Physics: Acc=0.7273, F1=0.0000
+
+Model: BERT-LR:sentence-transformers/all-mpnet-base-v2 | Split: test
+  Topic=ComputerScience: Acc=0.6412, F1=0.5713
+  Topic=Ecology: Acc=0.4709, F1=0.6309
+  Topic=Physics: Acc=0.7150, F1=0.0196
+  Topic=Statistics: Acc=0.5586, F1=0.6159
+
+Model: BERT-LR:sentence-transformers/all-mpnet-base-v2 | Split: valid
+  Topic=Statistics: Acc=0.5000, F1=0.6400
+  Topic=Ecology: Acc=0.5385, F1=0.7000
+  Topic=ComputerScience: Acc=0.6667, F1=0.6667
+  Topic=Physics: Acc=0.7273, F1=0.0000
+
+Model: LLM-Plain | Split: test
+  Topic=ComputerScience: Acc=0.8195, F1=0.7574
+  Topic=Ecology: Acc=0.7545, F1=0.7761
+  Topic=Physics: Acc=0.7506, F1=0.6801
+  Topic=Statistics: Acc=0.5864, F1=0.5732
+
+Model: LLM-Plain | Split: valid
+  Topic=Statistics: Acc=0.5556, F1=0.6667
+  Topic=Ecology: Acc=0.8462, F1=0.8571
+  Topic=ComputerScience: Acc=0.8889, F1=0.8889
+  Topic=Physics: Acc=0.9091, F1=0.8571
+
+Model: LLM-RAG | Split: test
+  Topic=ComputerScience: Acc=0.7996, F1=0.7070
+  Topic=Ecology: Acc=0.7306, F1=0.7461
+  Topic=Physics: Acc=0.7802, F1=0.6022
+  Topic=Statistics: Acc=0.6982, F1=0.6626
+
+Model: LLM-RAG | Split: valid
+  Topic=Statistics: Acc=1.0000, F1=1.0000
+  Topic=Ecology: Acc=1.0000, F1=1.0000
+  Topic=ComputerScience: Acc=1.0000, F1=1.0000
+  Topic=Physics: Acc=1.0000, F1=1.0000
+
+Model: RuleBased | Split: test
+  Topic=ComputerScience: Acc=0.7150, F1=0.6708
+  Topic=Ecology: Acc=0.6890, F1=0.7163
+  Topic=Physics: Acc=0.6398, F1=0.5974
+  Topic=Statistics: Acc=0.5421, F1=0.5825
+
+Model: RuleBased | Split: valid
+  Topic=Statistics: Acc=0.5000, F1=0.6400
+  Topic=Ecology: Acc=0.6923, F1=0.7500
+  Topic=ComputerScience: Acc=0.7778, F1=0.8000
+  Topic=Physics: Acc=0.3636, F1=0.4615
